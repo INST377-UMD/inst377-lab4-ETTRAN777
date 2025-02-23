@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Ethan Tran Lab 4</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+</style>
+<script src="script.js"></script>
+<body id = "body" style="background-color: rgb(255,215,236)">
+    <h1 id="heading">INST377 - Lab 4</h1>
+    <table>
+    <div class="formButtonContainer">
+        <div class="formDiv">
+            <form onsubmit="alertMe()">
+                <label for="name">Name:&nbsp;</label>
+                <input required type="text" name="name" id="nameField">&nbsp;
+                <input type="submit" value="Alert Me!">
+            </form>
+        </div>
+        <div class="buttonDiv">
+            <button onclick="changeColor()">Change Color</button>
+        </div>
+    </div>
+    
+    <div class="formButtonContainer">
+
+        <div class="formDiv">
+            <form onsubmit="validateText()" name = "validateForm">
+                <label for="name">Text Tester:&nbsp;</label>
+                <input required type="text" name="text" id = "textValidField">&nbsp;
+                <input type="submit" value="Validate Text">
+            </form>
+        </div>
+
+
+        <div class="buttonDiv">
+            <button onclick="addText()">Add Text</button>
+        </div>
+        <div class="buttonDiv">
+            <button onclick="resetHeader()">Reset</button>
+        </div>
+    </div>
+</table>
+
+</body>
+</html>
